@@ -72,7 +72,7 @@ const restart = () => {
             mario.style.animation = 'none';
             mario.style.bottom = `${marioPosition}px`;
     
-            mario.src = 'assets/imgs/game-over.png';
+            mario.src = 'img/game-over.png';
             mario.style.width = '70px';
             mario.style.marginLeft = '35px';
     
