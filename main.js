@@ -1,9 +1,18 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const cloud = document.querySelector('.cloud');
-
 const gameOver = document.querySelector('.game-over');
 const restartButton = document.querySelector('.restart');
+const scoreElement = document.querySelector(".score");
+
+const audioStart = new Audio("sound/audio_theme.mp3");
+const gameOverSound = new Audio("sound/audio_gameover.mp3");
+
+const updateScore = () => {
+    score += 1;
+    scoreElement.textContent = score;
+}
+
 
 const jump = () => {
 
